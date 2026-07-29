@@ -168,6 +168,11 @@
   nav.primary-nav a{ font-size:13px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; color:var(--ink); position:relative; padding-bottom:4px; }
   nav.primary-nav a::after{ content:''; position:absolute; left:0; right:0; bottom:0; height:1px; background:var(--sage-deep); transform:scaleX(0); transform-origin:left; transition:transform .35s ease; }
   nav.primary-nav a:hover::after{ transform:scaleX(1); }
+  nav.primary-nav li.nav-social{ display:flex; align-items:center; margin-left:-20px; }
+  nav.primary-nav li.nav-social a{ display:flex; align-items:center; padding-bottom:0; color:var(--ink); transition:color .3s ease, transform .3s ease; }
+  nav.primary-nav li.nav-social a::after{ display:none; }
+  nav.primary-nav li.nav-social a:hover{ color:var(--sage-deep); transform:translateY(-1px); }
+  nav.primary-nav li.nav-social svg{ width:19px; height:19px; display:block; }
 
   .menu-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
   .menu-toggle span{ width:24px; height:1px; background:var(--ink); }
@@ -348,6 +353,8 @@
   .mobile-menu{ position:fixed; inset:0; z-index:200; background:var(--ivory); display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:28px; padding:40px; transform:translateY(-100%); transition:transform .5s cubic-bezier(.22,.9,.28,1); }
   .mobile-menu.open{ transform:translateY(0); }
   .mobile-menu a{ font-family:var(--serif); font-size:32px; font-style:italic; }
+  .mobile-menu a.social-link{ display:inline-flex; align-items:center; gap:14px; }
+  .mobile-menu a.social-link svg{ width:27px; height:27px; flex-shrink:0; }
   .mobile-menu .close-menu{ position:absolute; top:30px; right:30px; font-family:var(--sans); font-size:13px; letter-spacing:.1em; text-transform:uppercase; background:none; border:none; cursor:pointer; }
 </style>
 </head>
@@ -395,6 +402,7 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li class="nav-social"><a href="https://www.instagram.com/timelesstales.films/" target="_blank" rel="noopener noreferrer" aria-label="Timeless Tales Films on Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.35" cy="6.65" r="1.05" fill="currentColor" stroke="none"/></svg></a></li>
       </ul>
     </nav>
     <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
@@ -411,6 +419,7 @@
   <a href="#portfolio">Portfolio</a>
   <a href="#pricing">Pricing</a>
   <a href="#contact">Contact</a>
+  <a class="social-link" href="https://www.instagram.com/timelesstales.films/" target="_blank" rel="noopener noreferrer" aria-label="Timeless Tales Films on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.35" cy="6.65" r="1.05" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
 </div>
 
 <main id="top">
