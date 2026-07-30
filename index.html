@@ -57,7 +57,6 @@
     { "@type": "Country", "name": "United Kingdom" },
     { "@type": "Country", "name": "Canada" }
   ],
-  "priceRange": "$$$",
   "review": [
     { "@type": "Review", "author": { "@type": "Person", "name": "Inês & Marco", "homeLocation": { "@type": "Place", "name": "Lisbon, Portugal" } }, "reviewBody": "Obrigado pelo vídeo que fizeram com alma. Já estamos fartos de chorar. Obrigado obrigado!" },
     { "@type": "Review", "author": { "@type": "Person", "name": "Ananya & Rohan", "homeLocation": { "@type": "Place", "name": "London, United Kingdom" } }, "reviewBody": "Our wedding film feels like a memory we can step back into. Timeless, elegant and emotional. Thank you!" },
@@ -264,10 +263,9 @@
   .tier:hover{ background:#fff; }
   .tier .tier-name{ font-family:var(--mono); font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--sage-deep); margin-bottom:16px; }
   .tier .tier-price{ font-family:var(--serif); font-size:32px; margin-bottom:22px; }
-  .tier-price.price-hidden{ font-family:var(--sans); font-size:14px; letter-spacing:.04em; text-transform:none; font-weight:600; color:var(--sage-deep); cursor:pointer; text-decoration:underline; text-underline-offset:3px; transition:color .25s ease; }
-  .tier-price.price-hidden:hover{ color:var(--ink); }
-  .tier.featured .tier-price.price-hidden{ color:var(--sage-bright); }
-  .pricing-unlock-note{ font-size:13px; color:var(--ink-soft); font-style:italic; margin:-6px 0 40px; }
+  .tier-price-request{ font-family:var(--mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--sage-deep); margin-bottom:22px; }
+  .tier.featured .tier-price-request{ color:var(--sage-bright); }
+  .pricing-unlock-note{ font-size:13px; color:var(--ink-soft); font-style:italic; margin:-6px 0 40px; max-width:36em; }
   .tier ul{ list-style:none; margin-bottom:20px; }
   .tier li{ font-size:14px; color:var(--ink-soft); padding:9px 0; border-top:1px solid var(--rule); }
   .tier li:first-child{ border-top:none; }
@@ -400,7 +398,7 @@
         <li><a href="wedding-venues.html">Wedding Venues</a></li>
         <li><a href="destination-wedding-films.html">Films</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#pricing">Collections</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="nav-social"><a href="https://www.instagram.com/timelesstales.films/" target="_blank" rel="noopener noreferrer" aria-label="Timeless Tales Films on Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.35" cy="6.65" r="1.05" fill="currentColor" stroke="none"/></svg></a></li>
       </ul>
@@ -417,7 +415,7 @@
   <a href="wedding-venues.html">Wedding Venues</a>
   <a href="destination-wedding-films.html">Films</a>
   <a href="#portfolio">Portfolio</a>
-  <a href="#pricing">Pricing</a>
+  <a href="#pricing">Collections</a>
   <a href="#contact">Contact</a>
   <a class="social-link" href="https://www.instagram.com/timelesstales.films/" target="_blank" rel="noopener noreferrer" aria-label="Timeless Tales Films on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.35" cy="6.65" r="1.05" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
 </div>
@@ -566,17 +564,17 @@
   <section id="pricing" data-focal="100mm" data-tag="Macro">
     <div class="wrap">
       <div class="pricing-intro reveal">
-        <span class="eyebrow">Price List</span>
+        <span class="eyebrow">Collections</span>
         <h2>Choose the coverage that fits your day.</h2>
         <p>Three video collections, a full menu of extras, and photography to match.</p>
-        <p class="pricing-unlock-note">Pricing is shared once you reach out. Send us a quick message via the <a href="#contact" style="text-decoration:underline; color:inherit;">contact form</a> below and the numbers will appear right here.</p>
+        <p class="pricing-unlock-note">Every wedding is different, so every quote is prepared individually. <a href="#contact" style="text-decoration:underline; color:inherit;">Send us your date and venue</a> and we'll come back to you with a tailored proposal.</p>
       </div>
 
       <div class="subhead">Video Collections</div>
       <div class="tier-grid reveal reveal-delay-1">
         <div class="tier">
           <div class="tier-name">Essential</div>
-          <div class="tier-price price-hidden" data-price="1.800€">Ask for Pricing</div>
+          <div class="tier-price-request">On request</div>
           <ul>
             <li>1 Filmmaker</li>
             <li>1 Camera Assistant</li>
@@ -587,7 +585,7 @@
         </div>
         <div class="tier featured">
           <div class="tier-name">Cinematic</div>
-          <div class="tier-price price-hidden" data-price="2.750€">Ask for Pricing</div>
+          <div class="tier-price-request">On request</div>
           <ul>
             <li>2 Filmmakers</li>
             <li>1 Camera Assistant</li>
@@ -598,7 +596,7 @@
         </div>
         <div class="tier">
           <div class="tier-name">Signature</div>
-          <div class="tier-price price-hidden" data-price="3.300€">Ask for Pricing</div>
+          <div class="tier-price-request">On request</div>
           <ul>
             <li>2 Filmmakers</li>
             <li>1 Camera Assistant</li>
@@ -609,19 +607,18 @@
           <div class="tier-note">The full experience for those who want cinematic luxury from start to finish.</div>
         </div>
       </div>
-      <p class="price-caveat">All prices are subject to VAT at the prevailing legal rate.</p>
 
       <div class="addon-cols reveal reveal-delay-2">
         <div>
           <div class="subhead">À La Carte / Extras</div>
           <ul>
-            <li><span>Content creator video (5 reels captured &amp; edited on the day)</span><span>€350</span></li>
-            <li><span>Drone</span><span>€250</span></li>
-            <li><span>Pre / Post-Wedding film (up to 3h)</span><span>€350</span></li>
-            <li><span>Teaser (30–60s)</span><span>€250</span></li>
-            <li><span>Extra hours</span><span>€150/h</span></li>
-            <li><span>Express delivery (3 weeks)</span><span>€450</span></li>
-            <li><span>Overnight stay if required</span><span>€250/person</span></li>
+            <li>Content creator video (5 reels captured &amp; edited on the day)</li>
+            <li>Drone</li>
+            <li>Pre / Post-Wedding film (up to 3h)</li>
+            <li>Teaser (30–60s)</li>
+            <li>Extra hours</li>
+            <li>Express delivery (3 weeks)</li>
+            <li>Overnight stay if required</li>
           </ul>
         </div>
         <div>
@@ -646,7 +643,7 @@
       <div class="tier-grid reveal reveal-delay-3">
         <div class="tier">
           <div class="tier-name">Basic</div>
-          <div class="tier-price price-hidden" data-price="€1,540.00">Ask for Pricing</div>
+          <div class="tier-price-request">On request</div>
           <ul>
             <li>1 Photographer</li>
             <li>10 hours of coverage</li>
@@ -655,7 +652,7 @@
         </div>
         <div class="tier featured">
           <div class="tier-name">Standard</div>
-          <div class="tier-price price-hidden" data-price="€1,980.00">Ask for Pricing</div>
+          <div class="tier-price-request">On request</div>
           <ul>
             <li>2 Photographers</li>
             <li>10 hours of coverage</li>
@@ -665,7 +662,7 @@
         </div>
         <div class="tier">
           <div class="tier-name">Premium</div>
-          <div class="tier-price price-hidden" data-price="€2,200.00">Ask for Pricing</div>
+          <div class="tier-price-request">On request</div>
           <ul>
             <li>2 Photographers</li>
             <li>12 hours of coverage</li>
@@ -754,7 +751,7 @@
     <div class="footer-links">
       <a href="destination-wedding-films.html">Films</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#pricing">Collections</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="#top" class="back-top">Back to top ↑</a>
@@ -862,37 +859,8 @@
       'Wedding Date: ' + data + '\n\n' +
       mensagem
     );
-    unlockPricing();
     window.location.href = 'mailto:timelesstalesweddingfilms@gmail.com?subject=' + subject + '&body=' + body;
   });
-
-  // pricing stays hidden until a visitor has sent a message via the contact form
-  function revealPrices(){
-    document.querySelectorAll('.tier-price[data-price]').forEach((el) => {
-      el.textContent = el.dataset.price;
-      el.classList.remove('price-hidden');
-      el.style.cursor = 'default';
-      el.style.textDecoration = 'none';
-    });
-    const note = document.querySelector('.pricing-unlock-note');
-    if (note) note.style.display = 'none';
-  }
-  function unlockPricing(){
-    try { localStorage.setItem('ttPricingUnlocked', '1'); } catch (e) {}
-    revealPrices();
-  }
-  let pricingAlreadyUnlocked = false;
-  try { pricingAlreadyUnlocked = localStorage.getItem('ttPricingUnlocked') === '1'; } catch (e) {}
-  if (pricingAlreadyUnlocked) {
-    revealPrices();
-  } else {
-    document.querySelectorAll('.tier-price.price-hidden').forEach((el) => {
-      el.addEventListener('click', () => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-        document.getElementById('nome')?.focus();
-      });
-    });
-  }
 </script>
 
 </body>
