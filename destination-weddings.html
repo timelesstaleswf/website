@@ -40,13 +40,15 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Do you travel internationally for weddings?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Portugal is home, but we travel worldwide for destination weddings, including for couples from the US, Canada and the UK." } },
-    { "@type": "Question", "name": "Do you speak English?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, fluently. All communication, planning calls and on-the-day direction are in English." } },
-    { "@type": "Question", "name": "How far in advance should we book?", "acceptedAnswer": { "@type": "Answer", "text": "Most couples book 9-14 months ahead, especially for peak season (June-September)." } },
-    { "@type": "Question", "name": "Can we meet online before booking?", "acceptedAnswer": { "@type": "Answer", "text": "Always. We do video calls across time zones to make planning easy from anywhere, including the US, Canada and the UK." } },
-    { "@type": "Question", "name": "Can you recommend venues, planners or photographers in Portugal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. After 15 years and 400+ weddings here, we're happy to share trusted recommendations - just ask." } },
-    { "@type": "Question", "name": "How does travel and accommodation work?", "acceptedAnswer": { "@type": "Answer", "text": "Get in touch with your dates and venue and we'll confirm exactly how travel is handled for your wedding." } },
-    { "@type": "Question", "name": "Do you offer photography too?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work alongside a trusted photography team, so couples can have both video and photography handled by people who already know how to work well together." } }
+    { "@type": "Question", "name": "Do you travel internationally for weddings?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Portugal is our home, but we've had the privilege of filming destination weddings around the world. Wherever your celebration takes place, we'd love to hear your plans." } },
+    { "@type": "Question", "name": "Do you speak English?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, fluently. From your first enquiry to planning calls and your wedding day itself, all communication is in English." } },
+    { "@type": "Question", "name": "How far in advance should we book?", "acceptedAnswer": { "@type": "Answer", "text": "Most couples secure their date 9-14 months in advance, particularly for weddings between May and October. If you already have your venue, we recommend getting in touch as soon as possible." } },
+    { "@type": "Question", "name": "Can we meet online before booking?", "acceptedAnswer": { "@type": "Answer", "text": "Of course. We regularly meet couples across different time zones, making it easy to plan your wedding wherever you're based." } },
+    { "@type": "Question", "name": "Can you recommend venues, planners or photographers in Portugal?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. After 15 years and 400+ weddings, we've built strong relationships with some of Portugal's most trusted wedding professionals and are always happy to share recommendations that suit your style and plans." } },
+    { "@type": "Question", "name": "Do you help with the wedding timeline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work closely with your planner and photographer to create a timeline that allows you to enjoy your day while ensuring every important moment is beautifully captured." } },
+    { "@type": "Question", "name": "How do travel and accommodation work?", "acceptedAnswer": { "@type": "Answer", "text": "Every destination wedding is different. Once you share your wedding date and venue, we'll provide a clear, personalised quote including any travel requirements, so everything is transparent from the start." } },
+    { "@type": "Question", "name": "Do you offer photography as well?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with a trusted in-house photography team that shares our approach and values. Choosing both photography and filmmaking together ensures a seamless experience, with professionals who already know how to work in perfect harmony throughout the day." } },
+    { "@type": "Question", "name": "How long does it take to receive our wedding film?", "acceptedAnswer": { "@type": "Answer", "text": "Every film is individually edited with great care. Delivery times vary depending on the season, but we'll always provide an estimated timeline before your wedding and keep you updated throughout the process." } }
   ]
 }
 </script>
@@ -290,6 +292,14 @@
   .step-list li{ counter-increment:step; display:flex; gap:16px; padding:16px 0; border-top:1px solid var(--rule); font-size:15px; color:var(--ink-soft); font-weight:300; }
   .step-list li:first-child{ border-top:none; }
   .step-list li::before{ content:counter(step,decimal-leading-zero); font-family:var(--mono); font-size:12px; color:var(--sage-deep); flex-shrink:0; padding-top:2px; }
+  .step-list li > div{ flex:1; }
+  .step-list .step-title{ display:block; font-family:var(--serif); font-size:18px; font-weight:500; color:var(--ink); margin-bottom:5px; }
+
+  .season-list{ list-style:none; }
+  .season-list li{ padding:16px 0; border-top:1px solid rgba(201,193,178,0.2); }
+  .season-list li:first-child{ border-top:none; padding-top:0; }
+  .season-list .season-name{ display:block; font-family:var(--serif); font-size:17px; font-weight:500; color:var(--cream-on-dark); margin-bottom:5px; }
+  .season-list p{ color:#C9C1B2; font-weight:300; font-size:14.5px; line-height:1.55; }
 
   .gallery-row{ display:flex; flex-wrap:wrap; gap:12px; margin-top:20px; }
   .gallery-chip{ border:1px solid var(--rule-dark); padding:12px 20px; font-size:13px; letter-spacing:.02em; color:var(--ink-soft); transition:border-color .25s ease, color .25s ease; display:inline-flex; align-items:center; gap:8px; }
@@ -464,7 +474,7 @@
     <div class="wrap">
       <span class="eyebrow">Destination Weddings</span>
       <h1>Getting Married in Portugal: <em>Everything You Need to Know</em></h1>
-      <p class="sub">Every year, more couples from Canada, the US and the UK choose Portugal for their wedding. Here is what we tell every international couple who asks us this exact question.</p>
+      <p class="sub">Every year, more couples from Canada, the US and the UK choose Portugal for their wedding. Here's what we tell every international couple considering saying &ldquo;I do&rdquo; in Portugal.</p>
       <p style="margin-top:22px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); font-weight:500;">15+ Years Filming in Portugal &nbsp;·&nbsp; 400+ Weddings Documented &nbsp;·&nbsp; Calm, Documentary Approach</p>
     </div>
   </section>
@@ -474,10 +484,12 @@
   <section data-focal="50mm" data-tag="Standard">
     <div class="wrap">
       <div class="about-copy reveal" style="max-width:52em;">
-        <span class="eyebrow">Why Portugal</span>
-        <h2>Why couples choose Portugal.</h2>
-        <p>Portugal offers something increasingly rare in destination weddings: variety within a small, easy-to-navigate country. In a single week, your guests can experience sun-drenched coastline, centuries-old palaces, working vineyards and a capital city with world-class food, all within a few hours' drive of each other.</p>
-        <p>Beyond the scenery, Portugal is genuinely practical to plan a wedding in. It's part of the EU, English is widely spoken in the wedding industry, flights from North America are direct and affordable, and costs are noticeably lower than comparable destinations like Italy or the South of France, without compromising on quality.</p>
+        <span class="eyebrow">Why Portugal?</span>
+        <h2>Why more international couples are choosing Portugal.</h2>
+        <p>Portugal has quietly become one of Europe's most sought-after wedding destinations&mdash;and it's easy to understand why.</p>
+        <p>Few countries offer such incredible variety within such short distances. In a single trip, your guests can explore golden beaches, historic palaces, world-renowned vineyards and vibrant cities, all just a few hours apart. Whether you dream of a luxury estate in the Douro Valley, a clifftop ceremony in the Algarve or an elegant celebration near Lisbon, Portugal offers an exceptional setting for every style of wedding.</p>
+        <p>Beyond its beauty, Portugal is remarkably easy to plan from abroad. As part of the European Union, it offers excellent infrastructure, a well-established wedding industry and experienced professionals who work with international couples every year. English is widely spoken, direct flights connect major cities in Canada, the US and the UK, and the overall experience often delivers exceptional value compared to destinations such as Italy or the South of France&mdash;without compromising on quality, service or hospitality.</p>
+        <p>Perhaps most importantly, Portugal offers something that's difficult to describe until you experience it: a relaxed atmosphere, genuine hospitality and a slower pace that allows couples and guests to truly enjoy every moment together.</p>
       </div>
     </div>
   </section>
@@ -488,30 +500,32 @@
     <div class="wrap">
       <div class="about-copy reveal" style="max-width:52em;">
         <span class="eyebrow">Why Timeless Tales</span>
-        <h2>Portugal is the setting. This is how we tell your story in it.</h2>
-        <p>We believe the best wedding films happen when couples simply enjoy their day. Rather than directing every moment, we work quietly in the background, documenting genuine emotions as they naturally unfold - cinematic without feeling staged, emotional without being forced.</p>
+        <h2>Portugal is the backdrop. Your story takes centre stage.</h2>
+        <p>Portugal provides extraordinary locations, but unforgettable wedding films are never about the location alone.</p>
+        <p>They're about the quiet glance before the ceremony, the laughter between friends, the embrace that no one planned and the emotions that can't be recreated.</p>
+        <p>That's why we film with a calm, unobtrusive approach, letting your day unfold naturally while we transform those fleeting moments into a timeless cinematic story. Beautifully composed, emotionally honest and unmistakably yours.</p>
       </div>
 
       <div class="services-grid reveal reveal-delay-2">
         <div class="service">
           <span class="num">01</span>
-          <h4>Get to Know Each Other</h4>
-          <p>A video call to understand your plans, vision and wedding weekend, wherever you're calling from.</p>
+          <h4>Let's Get to Know Each Other</h4>
+          <p>A relaxed video call to learn about your plans, your vision and everything that makes your wedding uniquely yours&mdash;wherever you are in the world.</p>
         </div>
         <div class="service">
           <span class="num">02</span>
           <h4>Planning Together</h4>
-          <p>We work alongside your planner and photographer so filming feels effortless on the day.</p>
+          <p>We collaborate closely with your planner and photographer, ensuring every detail is coordinated so your day unfolds naturally and effortlessly.</p>
         </div>
         <div class="service">
           <span class="num">03</span>
           <h4>Your Wedding Weekend</h4>
-          <p>A calm, documentary-style presence, capturing your celebration as it really happens.</p>
+          <p>With a calm, unobtrusive approach, we document every meaningful moment as it naturally happens&mdash;allowing you to stay fully present while we tell your story.</p>
         </div>
         <div class="service">
           <span class="num">04</span>
-          <h4>Delivery</h4>
-          <p>Your film, individually edited and delivered online in 4K, ready to relive for years to come.</p>
+          <h4>Your Film</h4>
+          <p>Every film is individually crafted and carefully edited before being delivered online in stunning 4K&mdash;ready to be shared, treasured and relived for generations.</p>
         </div>
       </div>
 
@@ -523,7 +537,7 @@
   <section data-focal="85mm" data-tag="Portrait">
     <div class="wrap">
       <div class="portfolio-head reveal">
-        <div><span class="eyebrow">Where to Marry</span><h2>Best regions for a destination wedding.</h2></div>
+        <div><span class="eyebrow">Where to Marry</span><h2>Discover Portugal's most beautiful wedding destinations.</h2></div>
       </div>
 
       <div class="region-block reveal">
@@ -531,7 +545,7 @@
         <div class="region-copy">
           <span class="region-tag">Fairytale &amp; Editorial</span>
           <h3>Sintra</h3>
-          <p>Palaces, misty forests and dramatic architecture. Best for couples who want a fairytale, editorial feel.</p>
+          <p>Palaces hidden among misty forests, historic estates and dramatic architecture make Sintra one of Europe's most enchanting wedding destinations. Perfect for couples dreaming of an elegant, storybook celebration with a timeless editorial feel.</p>
         </div>
       </div>
       <div class="region-block reveal">
@@ -539,7 +553,7 @@
         <div class="region-copy">
           <span class="region-tag">Barefoot Luxury</span>
           <h3>Comporta &amp; the Alentejo Coast</h3>
-          <p>Wild beaches, rice paddies and relaxed barefoot luxury. Best for laid-back, natural celebrations.</p>
+          <p>Endless sandy beaches, pine forests and understated luxury define Portugal's most exclusive coastal escape. Ideal for relaxed celebrations where nature, design and effortless elegance come together.</p>
         </div>
       </div>
       <div class="region-block reveal">
@@ -547,23 +561,23 @@
         <div class="region-copy">
           <span class="region-tag">Wine Country</span>
           <h3>Douro Valley</h3>
-          <p>Terraced vineyards and riverside quintas. Best for intimate, wine-country weddings.</p>
+          <p>Rolling vineyard terraces, historic wine estates and breathtaking river views create an unforgettable backdrop for intimate destination weddings. Perfect for couples who value exceptional food, wine and spectacular scenery.</p>
         </div>
       </div>
       <div class="region-block reveal">
         <div class="region-photo"><img src="algarve.jpg" alt="Algarve, Portugal - cliffs and golden coastline"></div>
         <div class="region-copy">
-          <span class="region-tag">Coastal &amp; Golden</span>
-          <h3>Algarve</h3>
-          <p>Cliffs, sea caves and golden coastline. Best for beach and resort-style weddings with easy guest logistics.</p>
+          <span class="region-tag">Coastal Elegance</span>
+          <h3>The Algarve</h3>
+          <p>Golden cliffs, hidden beaches and luxury resorts make the Algarve one of Europe's most iconic coastal wedding destinations. A wonderful choice for couples seeking sunshine, breathtaking ocean views and effortless guest travel.</p>
         </div>
       </div>
       <div class="region-block reveal">
         <div class="region-photo"><img src="lisboa.jpg" alt="Lisbon, Portugal - historic streets and quintas nearby"></div>
         <div class="region-copy">
-          <span class="region-tag">Central &amp; Convenient</span>
+          <span class="region-tag">City Meets Countryside</span>
           <h3>Lisbon &amp; Surrounding Quintas</h3>
-          <p>Central, easy for guests, and blends city and countryside. Best for couples who want convenience without losing charm.</p>
+          <p>Just minutes from Portugal's vibrant capital, elegant countryside estates offer the perfect balance between convenience and exclusivity. Ideal for couples who want easy international access without compromising on character or natural beauty.</p>
         </div>
       </div>
 
@@ -576,24 +590,40 @@
   <section class="quote-section" data-focal="100mm" data-tag="Macro">
     <div class="wrap">
       <div class="portfolio-head reveal" style="margin-bottom:40px;">
-        <div><span class="eyebrow on-dark">Planning Basics</span><h2 style="color:var(--cream-on-dark);">Legal steps, timing and cost.</h2></div>
+        <div><span class="eyebrow on-dark">Planning Basics</span><h2 style="color:var(--cream-on-dark);">Everything you need to know before planning your wedding in Portugal.</h2></div>
       </div>
       <div class="addon-cols reveal reveal-delay-1">
         <div>
-          <div class="subhead" style="color:#C9C1B2;">Legal vs. Symbolic Ceremonies</div>
-          <p style="color:#C9C1B2; font-weight:300; font-size:15px; max-width:34em;">Many international couples choose a symbolic ceremony in Portugal and handle the legal paperwork separately at home - it's simpler, faster, and avoids extra bureaucracy and translated documents. A legal marriage in Portugal is also possible but needs more lead time. We recommend confirming current requirements with your venue or planner early on.</p>
+          <div class="subhead" style="color:#C9C1B2;">Legal or Symbolic Ceremony?</div>
+          <p style="color:#C9C1B2; font-weight:300; font-size:15px; line-height:1.6; max-width:34em;">Most international couples choose to complete the legal paperwork in their home country and enjoy a symbolic ceremony in Portugal. It's a simpler, more flexible approach that avoids additional bureaucracy while giving you complete freedom to celebrate exactly as you envision.</p>
+          <p style="color:#C9C1B2; font-weight:300; font-size:15px; line-height:1.6; max-width:34em; margin-top:16px;">A legally recognised marriage in Portugal is also possible, although it requires additional documentation and more planning. We always recommend confirming the latest requirements with your wedding planner or venue as early as possible.</p>
         </div>
         <div>
-          <div class="subhead" style="color:#C9C1B2;">Best Time of Year</div>
-          <ul class="step-list">
-            <li style="color:#C9C1B2;">May &ndash; June: warm, green landscapes before peak summer heat</li>
-            <li style="color:#C9C1B2;">September &ndash; October: our top recommendation - warm days, softer light, Douro harvest season</li>
-            <li style="color:#C9C1B2;">July &ndash; August: peak season, hottest and busiest, book well ahead</li>
-            <li style="color:#C9C1B2;">Spring &amp; winter: quieter and more affordable, still beautiful on the coast</li>
+          <div class="subhead" style="color:#C9C1B2;">When Is the Best Time to Get Married?</div>
+          <ul class="season-list">
+            <li>
+              <span class="season-name">May &amp; June</span>
+              <p>Warm temperatures, lush green landscapes and long daylight hours before the peak summer season.</p>
+            </li>
+            <li>
+              <span class="season-name">September &amp; October <em style="font-family:var(--mono); font-style:normal; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--sage-bright); margin-left:8px;">Our favourite</em></span>
+              <p>Comfortable weather, beautiful golden light and the beginning of the Douro wine harvest make these months ideal for destination weddings.</p>
+            </li>
+            <li>
+              <span class="season-name">July &amp; August</span>
+              <p>The warmest and busiest months of the year. Expect higher demand for venues and suppliers, so early booking is essential.</p>
+            </li>
+            <li>
+              <span class="season-name">November to April</span>
+              <p>A quieter season with greater availability, milder pricing and beautiful coastal light&mdash;ideal for couples looking for a more intimate celebration.</p>
+            </li>
           </ul>
         </div>
       </div>
-      <p style="color:#C9C1B2; font-weight:300; font-size:14px; font-style:italic; margin-top:10px;">On cost: Portugal generally remains more affordable than Italy, France or Spain for a comparable level of quality. See our <a href="destination-wedding-films.html#pricing" style="color:var(--sage-bright); text-decoration:underline;">filming packages</a> for our own pricing.</p>
+      <div class="reveal reveal-delay-2">
+        <div class="subhead" style="color:#C9C1B2;">Budget Expectations</div>
+        <p style="color:#C9C1B2; font-weight:300; font-size:15px; line-height:1.6; max-width:44em;">Compared with destinations such as Italy or the South of France, Portugal continues to offer outstanding value without compromising on quality, hospitality or luxury. From venues to catering and creative suppliers, couples often find they can create a truly exceptional celebration while making their budget go further. See our <a href="destination-wedding-films.html#pricing" style="color:var(--sage-bright); text-decoration:underline;">filming packages</a> for our own pricing.</p>
+      </div>
     </div>
   </section>
 
@@ -602,16 +632,16 @@
   <section data-focal="35mm" data-tag="Documentary">
     <div class="wrap">
       <div class="portfolio-head reveal">
-        <div><span class="eyebrow">How It Works</span><h2>Planning from abroad, step by step.</h2></div>
+        <div><span class="eyebrow">How It Works</span><h2>Planning your destination wedding, step by step.</h2></div>
       </div>
-      <ul class="step-list reveal reveal-delay-1" style="max-width:640px;">
-        <li>Choose your season &amp; region - timing and location shape everything else, so decide these first</li>
-        <li>Book your venue &amp; key vendors - Portugal's best venues, photographers and filmmakers get booked 9&ndash;14 months out</li>
-        <li>Sort the paperwork - confirm legal vs. symbolic ceremony requirements early with your venue or a local planner</li>
-        <li>Plan guest travel - most couples host a long weekend; direct flights make this easy from North America and the UK</li>
-        <li>Arrive with time to spare - many couples land 3&ndash;5 days early to settle in before the big day</li>
+      <ul class="step-list reveal reveal-delay-1" style="max-width:680px;">
+        <li><div><span class="step-title">Choose your season and region</span>The time of year and the location will influence everything from the atmosphere and weather to venue availability and guest experience.</div></li>
+        <li><div><span class="step-title">Secure your venue and key suppliers</span>Portugal's most sought-after venues and wedding professionals are often booked 9&ndash;14 months in advance, especially for spring and autumn weddings.</div></li>
+        <li><div><span class="step-title">Plan the legal details</span>Whether you're choosing a legal or symbolic ceremony, confirm the requirements with your venue or wedding planner early in the planning process.</div></li>
+        <li><div><span class="step-title">Help your guests plan their trip</span>Many destination weddings in Portugal become a long weekend or short holiday. With direct flights from Canada, the US and the UK, travelling is straightforward for most guests.</div></li>
+        <li><div><span class="step-title">Arrive early and enjoy the experience</span>We always recommend arriving 3&ndash;5 days before your wedding. It gives you time to relax, settle in and enjoy Portugal before the celebrations begin.</div></li>
       </ul>
-      <p style="color:var(--ink-soft); font-weight:300; font-size:14px; margin-top:16px;">Curious how we personally work with couples filming their wedding day? See our <a href="destination-wedding-films.html#planning-abroad" style="text-decoration:underline;">filmmaking process →</a></p>
+      <p style="margin-top:22px;"><a href="destination-wedding-films.html#planning-abroad" style="text-decoration:underline; font-weight:500;">Discover how we document your wedding day &rarr;</a></p>
     </div>
   </section>
 
@@ -641,16 +671,18 @@
   <section data-focal="50mm" data-tag="Standard">
     <div class="wrap">
       <div class="portfolio-head reveal">
-        <div><span class="eyebrow">FAQs</span><h2>Frequently asked questions.</h2></div>
+        <div><span class="eyebrow">FAQs</span><h2>Frequently Asked Questions</h2></div>
       </div>
       <div class="reveal reveal-delay-1" style="max-width:52em;">
-        <div class="faq-item"><h4>Do you travel internationally for weddings?</h4><p>Yes. Portugal is home, but we travel worldwide for destination weddings.</p></div>
-        <div class="faq-item"><h4>Do you speak English?</h4><p>Yes, fluently. All communication, planning calls and on-the-day direction are in English.</p></div>
-        <div class="faq-item"><h4>How far in advance should we book?</h4><p>Most couples book 9&ndash;14 months ahead, especially for peak season (June&ndash;September).</p></div>
-        <div class="faq-item"><h4>Can we meet online before booking?</h4><p>Always. We do video calls across time zones to make planning easy from anywhere.</p></div>
-        <div class="faq-item"><h4>Can you recommend venues, planners or photographers in Portugal?</h4><p>Yes. After 15 years and 400+ weddings here, we're happy to share trusted recommendations - just ask.</p></div>
-        <div class="faq-item"><h4>How does travel and accommodation work?</h4><p>Get in touch with your dates and venue and we'll confirm exactly how travel is handled for your wedding.</p></div>
-        <div class="faq-item"><h4>Do you offer photography too?</h4><p>Yes. We work alongside a trusted photography team, so couples can have both video and photography handled by people who already know how to work well together.</p></div>
+        <div class="faq-item"><h4>Do you travel internationally for weddings?</h4><p>Absolutely. Portugal is our home, but we've had the privilege of filming destination weddings around the world. Wherever your celebration takes place, we'd love to hear your plans.</p></div>
+        <div class="faq-item"><h4>Do you speak English?</h4><p>Yes, fluently. From your first enquiry to planning calls and your wedding day itself, all communication is in English.</p></div>
+        <div class="faq-item"><h4>How far in advance should we book?</h4><p>Most couples secure their date 9&ndash;14 months in advance, particularly for weddings between May and October. If you already have your venue, we recommend getting in touch as soon as possible.</p></div>
+        <div class="faq-item"><h4>Can we meet online before booking?</h4><p>Of course. We regularly meet couples across different time zones, making it easy to plan your wedding wherever you're based.</p></div>
+        <div class="faq-item"><h4>Can you recommend venues, planners or photographers in Portugal?</h4><p>Absolutely. After 15 years and 400+ weddings, we've built strong relationships with some of Portugal's most trusted wedding professionals and are always happy to share recommendations that suit your style and plans.</p></div>
+        <div class="faq-item"><h4>Do you help with the wedding timeline?</h4><p>Yes. We work closely with your planner and photographer to create a timeline that allows you to enjoy your day while ensuring every important moment is beautifully captured.</p></div>
+        <div class="faq-item"><h4>How do travel and accommodation work?</h4><p>Every destination wedding is different. Once you share your wedding date and venue, we'll provide a clear, personalised quote including any travel requirements&mdash;so everything is transparent from the start.</p></div>
+        <div class="faq-item"><h4>Do you offer photography as well?</h4><p>Yes. We work with a trusted in-house photography team that shares our approach and values. Choosing both photography and filmmaking together ensures a seamless experience, with professionals who already know how to work in perfect harmony throughout the day.</p></div>
+        <div class="faq-item"><h4>How long does it take to receive our wedding film?</h4><p>Every film is individually edited with great care. Delivery times vary depending on the season, but we'll always provide an estimated timeline before your wedding and keep you updated throughout the process.</p></div>
       </div>
     </div>
   </section>
@@ -672,7 +704,7 @@
   <section class="cta-band" data-focal="85mm" data-tag="Portrait">
     <div class="wrap">
       <h2>Let's tell your Portugal wedding story.</h2>
-      <p>Whether you're travelling from Canada, the US, the UK or anywhere else, we'd be honoured to document your celebration with the same calm, cinematic approach behind Timeless Tales' 400+ weddings.</p>
+      <p>Whether you're travelling from Canada, the US, the UK or anywhere in the world, we'll capture your celebration with the calm, cinematic storytelling that has defined over 400 weddings and more than 15 years of experience.</p>
       <a href="/#contact" class="btn-primary">Start the Conversation</a>
     </div>
   </section>
