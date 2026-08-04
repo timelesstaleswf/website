@@ -36,15 +36,6 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Best Wedding Venues in Portugal",
-  "description": "A curated list of luxury wedding venues across Portugal for couples from the US, Canada and the UK.",
-  "numberOfItems": 35
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://timelesstales.pt/" },
@@ -153,6 +144,9 @@
   nav.primary-nav a{ font-size:13px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; color:var(--ink); position:relative; padding-bottom:4px; }
   nav.primary-nav a::after{ content:''; position:absolute; left:0; right:0; bottom:0; height:1px; background:var(--sage-deep); transform:scaleX(0); transform-origin:left; transition:transform .35s ease; }
   nav.primary-nav a:hover::after{ transform:scaleX(1); }
+  /* six nav items need a tighter gap before the mobile breakpoint kicks in */
+  @media (max-width:1180px){ nav.primary-nav ul{ gap:26px; } nav.primary-nav a{ font-size:12px; letter-spacing:.1em; } }
+  @media (max-width:1010px){ nav.primary-nav ul{ gap:18px; } nav.primary-nav a{ font-size:11px; letter-spacing:.07em; } }
   nav.primary-nav li.nav-social{ display:flex; align-items:center; margin-left:-20px; }
   nav.primary-nav li.nav-social a{ display:flex; align-items:center; padding-bottom:0; color:var(--ink); transition:color .3s ease, transform .3s ease; }
   nav.primary-nav li.nav-social a::after{ display:none; }
@@ -383,8 +377,9 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Wedding Venues in Portugal",
+  "name": "Best Wedding Venues in Portugal",
   "description": "A curated list of luxury wedding venues across Portugal, recommended by Timeless Tales Wedding Films.",
+  "numberOfItems": 35,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -882,10 +877,11 @@
     </a>
     <nav class="primary-nav" aria-label="Primary navigation">
       <ul>
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/#pricing">Collections</a></li>
+        <li><a href="destination-wedding-films.html">All Films</a></li>
         <li><a href="destination-weddings.html">Destination Weddings</a></li>
         <li><a href="wedding-venues.html" class="active">Wedding Venues</a></li>
-        <li><a href="destination-wedding-films.html">Portfolio</a></li>
-        <li><a href="destination-wedding-films.html#pricing">Collections</a></li>
         <li><a href="/#contact">Contact</a></li>
         <li class="nav-social"><a href="https://www.instagram.com/timelesstales.films/" target="_blank" rel="noopener noreferrer" aria-label="Timeless Tales Films on Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.35" cy="6.65" r="1.05" fill="currentColor" stroke="none"/></svg></a></li>
       </ul>
@@ -898,10 +894,11 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <button class="close-menu" id="closeMenu">Close ✕</button>
+  <a href="/#portfolio">Portfolio</a>
+  <a href="/#pricing">Collections</a>
+  <a href="destination-wedding-films.html">All Films</a>
   <a href="destination-weddings.html">Destination Weddings</a>
   <a href="wedding-venues.html" class="active">Wedding Venues</a>
-  <a href="destination-wedding-films.html">Portfolio</a>
-  <a href="destination-wedding-films.html#pricing">Collections</a>
   <a href="/#contact">Contact</a>
   <a class="social-link" href="https://www.instagram.com/timelesstales.films/" target="_blank" rel="noopener noreferrer" aria-label="Timeless Tales Films on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.35" cy="6.65" r="1.05" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
 </div>
